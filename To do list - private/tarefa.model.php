@@ -1,5 +1,6 @@
 <?php
 	
+	// Class Tarefa, que irá servir de modelo para as tarefas registradas no aplicativo.
 	class Tarefa {
 		private $id;
 		private $id_status;
