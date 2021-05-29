@@ -11,8 +11,9 @@
 
 	$acao = isset($_GET['acao']) ? $_GET['acao'] : $acao;
 
-	if ($acao == 'inserir') {
-		// Instâncinado as classes contidas dentro de cada arquivo:
+	if ($acao == 'inserir' && $_POST['tarefa']) {
+
+	// Instâncinado as classes contidas dentro de cada arquivo:
 
 		$tarefa = new Tarefa();
 		$tarefa->__set('tarefa', $_POST['tarefa']);
@@ -36,8 +37,10 @@
 	} else if ($acao == 'atualizar') {
 	
 		$tarefa = new Tarefa();
-		$tarefa->__set('id', $_POST['id']);
-		$tarefa->__set('tarefa', $_POST['tarefaEditada']);
+
+		// Fazendo a atribuição dos novos valores
+		$tarefa->__set('id', $_POST['id'])
+			   ->__set('tarefa', $_POST['tarefaEditada']);
 
 		$conexao = new Conexao();
 
@@ -46,6 +49,17 @@
 
 			header('location: todas_tarefas.php');
 		};
+
+	} else if ($acao == 'remover') {
+
+		$tarefa = new Tarefa();
+		$tarefa->__set('id', $_GET['id']);
+
+		$conexao = new Conexao();
+
+		$tarefaService = new TarefaService($conexao, $tarefa);
+		$tarefaService->remover();
+		header('location: todas_tarefas.php');
 	}
 
 ?>

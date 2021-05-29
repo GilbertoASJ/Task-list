@@ -15,6 +15,9 @@
 		public function __set($atributo, $valor) {
 
 			$this->$atributo = $valor;
+			
+			// Fazemos o retorno do próprio objeto em questão para que não seja necessário fazer a referência da classe.
+			return $this;
 		}
 	}
 
