@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--dark-bg: #0a0e14;
+	--bg: #0f1419;
+}
+
+body {
+	background: var(--dark-bg) !important;
+	font-family: 'Lato', sans-serif;
+
+	nav {
+		background: var(--bg);
+
+		.container  {
+
+			a.reference {
+				font-size: 1rem !important;
+			}
+		}
+	}
+}
+
+/* Content */
+.container {
+
+	.row {
+
+		color: whitesmoke !important;
+
+		i {
+			transition: filter 0.9s;
+
+			&:hover {
+				filter: brightness(0.6);
+			}
+		}
+		
+
+		.menu {
+			margin-bottom: 25px;
+
+			ul li {
+				background-color: var(--bg) !important;
+
+				a {
+					color: whitesmoke;
+				}
+			}
+		}
+	}
+
+	.pagina {
+		background-color: var(--bg) !important;
+		border: 1px solid grey;
+		border-radius: 5.75px;
+		padding: 25px !important;
+	}
+}
+
+.app {
+	margin-top: 25px;
+}
+
+li.list-group-item.active {
+	background-color: #fff;
+	border-color: gray;
+    border-left:solid 5px gray;
+}
+
+li a {
+	color: #212529;
+}
+
+li a:hover {
+	text-decoration: none;
+}
+
+h4 {
+	color: #009933 !important;
+}
