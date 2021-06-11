@@ -26,8 +26,6 @@
   </p>
 </p>
 
-
-
 <!-- TABLE OF CONTENTS -->
 <details open="open">
   <summary>Lista de conteúdo</summary>
@@ -76,6 +74,8 @@ As tecnologias usadas nesse projeto foram:
 
 <!-- GETTING STARTED -->
 ## Como usar
+
+Em 'Nova tarefa' descreva sua tarefa e clique em cadastrar, em 'Todas tarefas' você pode visualizar as tarefas(pendentes e concluídas) editar e excluir as tarefas, e em 'Tarefas pendentes' poderá fazer a consulta das tarefas que você ainda não concluiu(ainda não marcou como concluída em todas tarefas).
 
 Este é um exemplo de como você pode dar instruções sobre como configurar seu projeto localmente. Para obter uma cópia local instalada e funcionando, siga estas etapas simples de exemplo.
 
