@@ -3,7 +3,7 @@
 <p align="center">
   <a href="https://github.com/GilbertoASJ/Task-list/">
     <img 
-      src="https://img-premium.flaticon.com/png/512/1081/1081007.png?token=exp=1623443681~hmac=2716eab99f4faa599997a9f8b1680669" 
+      src="https://image.flaticon.com/icons/png/512/1187/1187525.png" 
       alt="Logo Task list - Flaticon"
       width="100"
       height="100" 
